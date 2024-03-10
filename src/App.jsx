@@ -1,14 +1,10 @@
-import './App.css'
+import Home from "./pages/Home";
 
-function App() {
-  
 
+export default function App() {
   return (
-    <>
-      <h1 className='text-yellow-500 '>Hello world</h1>
-       
-    </>
+    <div>
+      <Home />
+    </div>
   )
 }
-
-export default App
