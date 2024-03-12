@@ -3,7 +3,7 @@ import heroAs from "../assets/heroAs.svg"
 
 export default function Hero() {
   return (
-    <div className='bg-[#043873] h-[650px] px-44 pt-6'>
+    <div className='bg-[#043873] h-[600px] px-44 pt-6'>
         <Navbar />
         <div className='flex justify-between mt-32 text-white'>
             <div className='w-1/2 mt-20'>

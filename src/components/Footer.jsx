@@ -1,7 +1,7 @@
-import React from 'react'
+
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <div className="px-44 h-[400px] bg-[#043873]">Footer</div>
   )
 }
