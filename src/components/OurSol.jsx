@@ -2,12 +2,12 @@ import oursolAs from "../assets/oursolAs.svg";
 
 export default function OurSol() {
   return (
-    <div className="px-4 lg:px-44 mt-7 h-[650px] lg:h-[550px]">
-      <h1 className="flex justify-center lg:justify-end text-3xl lg:text-5xl font-bold text-[#043873]">Our Solution</h1>
-      <div className="lg:flex justify-between">
-        <img src={oursolAs} className="lg:w-1/2" />
-        <div className="lg:w-1/2 flex justify-center lg:justify-end">
-          <h2 className="mt-10 text-center lg:text-right lg:w-3/4 ">
+    <div className="px-4 lg:px-44 mt-7 h-[650px] md:h-[550px]">
+      <h1 className="flex justify-center md:justify-end text-3xl md:text-5xl font-bold text-[#043873]">Our Solution</h1>
+      <div className="md:flex justify-between">
+        <img src={oursolAs} className="md:w-1/2" />
+        <div className="md:w-1/2 flex justify-center md:justify-end">
+          <h2 className="mt-10 text-center md:text-right md:w-3/4 ">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
