@@ -1,7 +1,7 @@
 import WorkAs from "../assets/WorkAs.svg";
 export default function Working() {
   return (
-    <div className="bg-[#a5cefc77] px-4 lg:px-44 h-screen md:h-[600px] pt-7">
+    <div className="bg-[#a5cefc77] px-4 lg:px-44 h-screen md:h-[600px] pt-7" id="working">
       <h1 className="text-3xl md:text-5xl font-bold text-center md:text-left text-[#043873]">How it works?</h1>
       <div className="md:flex justify-between">
         <div className="md:w-1/2">

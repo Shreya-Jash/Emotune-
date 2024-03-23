@@ -1,7 +1,7 @@
 import Contactbg from "../assets/ContactAs.svg";
 export default function Contact() {
   return (
-    <div className="px-4 lg:px-44 h-[700px] lg:h-[600px] mt-10">
+    <div className="px-4 lg:px-44 h-[700px] md:h-[600px] mt-10" id="contact">
       <h1 className="flex justify-center md:justify-end text-3xl md:text-5xl font-bold text-[#043873] mb-4 md:mb-0">
         Contact Us-
       </h1>
