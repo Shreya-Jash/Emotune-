@@ -4,6 +4,7 @@ import { createPortal } from "react-dom";
 import { Link } from "react-scroll";
 // import { NavLink } from "react-router-dom";
 import Hamburger from "../assets/hamburger.png";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   //mobile view
@@ -22,7 +23,7 @@ export default function Navbar() {
 
   return (
     <div className="flex justify-between text-white text-xl">
-      <Link to="hero" smooth={true}>Logo</Link>
+      <NavLink to="/" smooth={true}>Logo</NavLink>
 
       <div className="md:hidden flex justify-center items-center" onClick={() => setIsMobile(true)}>
         <img src={Hamburger} className=" h-7 overflow-hidden" />
