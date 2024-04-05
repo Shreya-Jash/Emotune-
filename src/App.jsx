@@ -1,14 +1,16 @@
-import './App.css'
+import Dashboard from "./pages/Dashboard";
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function App() {
-  
-
+export default function App() {
   return (
-    <>
-      <h1 className='text-yellow-500 '>Hello world</h1>
-       
-    </>
-  )
+    <Router>
+      <div>
+        <Routes>
+          <Route exact path="/" Component={Home} />
+          <Route path="/dashboard" Component={Dashboard} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
-
-export default App
