@@ -3,7 +3,7 @@ const pool = require("../db");
 const bcrypt = require("bcrypt");
 const jwtGenerator = require("../utils/jwtGenerator");
 const validInfo = require("../middleware/validinfo");
-const authorization = require("../middleware/authorization");
+const authorize = require("../middleware/authorization");
 
 //register route
 
@@ -91,7 +91,7 @@ router.post("/login", validInfo, async (req, res) => {
   }
 });
 
-router.get("/is-verify", authorization, (req, res) => {
+router.get("/verify", authorize, (req, res) => {
   try {
     res.json(true);
   } catch (err) {
