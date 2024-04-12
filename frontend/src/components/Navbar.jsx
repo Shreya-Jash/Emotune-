@@ -10,10 +10,6 @@ export default function Navbar() {
   //mobile view
   const [isMobile, setIsMobile]= useState(false)
 
-  const handleClick = () => {
-    setIsMobile(false);
-  }
-
   //Login Modal
   const [modalOpen, setModalOpen] = useState(false);
 
