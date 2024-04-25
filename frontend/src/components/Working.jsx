@@ -1,4 +1,5 @@
 import WorkAs from "../assets/WorkAs.svg";
+import headerbg from "../assets/headerbg.svg"
 export default function Working() {
   return (
     <div
@@ -6,7 +7,7 @@ export default function Working() {
       id="working"
     >
       <h1 className="text-3xl md:text-5xl font-bold text-center md:text-left text-[#043873]">
-        How it works?
+        <h2 className="absolute z-10">How it works? </h2><img src={headerbg} className="relative pt-6 md:pt-8 w-[70%]  lg:w-auto"/>
       </h1>
       <div className="md:flex justify-between">
         <div className="md:w-1/2">
@@ -25,7 +26,7 @@ export default function Working() {
             </div>
           </div>
         </div>
-        <div className="md:w-1/2 flex justify-end align-middle">
+        <div className="md:w-1/2 flex justify-end align-middle mt-10 md:mt-0">
           <img src={WorkAs} className="md:h-[70%]" />
         </div>
       </div>

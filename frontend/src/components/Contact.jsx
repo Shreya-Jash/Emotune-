@@ -1,9 +1,11 @@
 import Contactbg from "../assets/ContactAs.svg";
+import headerbg from "../assets/headerbg.svg"
+
 export default function Contact() {
   return (
     <div className="px-4 lg:px-44 h-[700px] md:h-[600px] mt-10" id="contact">
       <h1 className="flex justify-center md:justify-end text-3xl md:text-5xl font-bold text-[#043873] mb-4 md:mb-0">
-        Contact Us-
+      <h2 className="absolute z-10"> Contact Us-  </h2><img src={headerbg} className="relative pt-6 md:pt-8 w-[70%]  lg:w-auto"/>
       </h1>
       <div className="md:flex">
         <div className="flex justify-center md:block">
