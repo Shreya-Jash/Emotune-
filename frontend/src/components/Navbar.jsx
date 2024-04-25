@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 import Hamburger from "../assets/hamburger.png";
 import { NavLink } from "react-router-dom";
 import { toast } from "react-toastify";
+import emotune from "../assets/Emotune.png"
 
 export default function Navbar({ setAuth, isAuthenticated }) {
   const [isMobile, setIsMobile] = useState(false);
@@ -28,7 +29,7 @@ export default function Navbar({ setAuth, isAuthenticated }) {
   return (
     <div className="flex justify-between text-white text-xl">
       <NavLink to="/" smooth={true}>
-        Logo
+        <img src={emotune} alt="Logo" className=" h-8"/>
       </NavLink>
 
       <div
