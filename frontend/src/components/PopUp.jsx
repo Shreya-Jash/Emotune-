@@ -50,7 +50,7 @@ const PopUp = ({ closeModal, setAuth }) => {
     <div className=" fixed left-0 top-0 w-full h-full  flex items-center justify-center bg-black/50">
       <div className="w-[700px] h-[550px] bg-white rounded-md">
         <div className="flex justify-between  w-auto">
-          <div className="flex justify-center align-middle items-center w-[60%]">
+          <div className="flex justify-center align-middle items-center w-[55%]">
             <div>
               <h1 className="text-blue-700 font-bold text-2xl text-center mb-3">
                 LOG IN
@@ -79,7 +79,7 @@ const PopUp = ({ closeModal, setAuth }) => {
               </form>
             </div>
           </div>
-          <div className="w-[40%] h-[550px] bg-blue-500">
+          <div className="w-[45%] h-[550px] bg-[url('/src/assets/loginBg.svg')]">
             <p
               onClick={() => closeModal("Modal was closed")}
               className="close flex justify-end mr-10 text-red-500 font-bold text-2xl cursor-pointer"
