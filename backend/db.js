@@ -10,7 +10,6 @@ pool.query('SELECT 1', (err, res) => {
     } else {
       console.log('Database connection successful');
     }
-    pool.end(); // Don't forget to release the pool when done.
   });
 
 module.exports = pool;
