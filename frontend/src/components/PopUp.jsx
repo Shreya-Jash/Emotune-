@@ -1,15 +1,12 @@
 // import loginBg from "../assets/loginBg.svg";
 import { useState } from "react";
 import { toast } from "react-toastify";
-
 const PopUp = ({ closeModal, setAuth }) => {
   const [inputs, setInputs] = useState({
     name: "",
     password: "",
   });
-
-  // console.log(setAuth)
-
+ 
   const { name, password } = inputs;
 
   const onChange = (e) =>
@@ -19,7 +16,8 @@ const PopUp = ({ closeModal, setAuth }) => {
     e.preventDefault();
     try {
       const body = { name, password };
-      const response = await fetch(`${process.env.BACKEND_HOST}/auth/login`, {
+      console.log(URL)
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_HOST}/auth/login`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",
@@ -43,6 +41,7 @@ const PopUp = ({ closeModal, setAuth }) => {
       }
     } catch (err) {
       console.error(err.message);
+      console.log(err)
     }
   };
 

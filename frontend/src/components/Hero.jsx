@@ -3,19 +3,16 @@ import heroAs from "../assets/heroAs.svg";
 // import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
-
 // toast.configure();
-
 export default function Hero() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-
+  console.log(import.meta.env.VITE_BACKEND_HOST)
   const setAuth = (boolean) => {
     setIsAuthenticated(boolean);
-  };
-
+  }
   async function isAuth() {
     try {
-      const response = await fetch(`${process.env.BACKEND_HOST}/auth/login`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_HOST}/auth/login`, {
         method: "GET",
         headers: { token: localStorage.token },
       });
