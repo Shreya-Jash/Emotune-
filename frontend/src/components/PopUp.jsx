@@ -55,8 +55,8 @@ const PopUp = ({ closeModal, setAuth }) => {
               <h1 className="text-blue-700 font-bold text-2xl text-center mb-3">
                 LOG IN
               </h1>
-              <h3 className="mb-3">How do I get started with project abc?</h3>
-              <form className="flex flex-col" onSubmit={onSubmitForm}>
+              <h3 className="mb-3 text-center font-normal text-blue-900">Login to view your data.<br/> <span className="font-semibold">Wanna join us? </span>Then it's simple just send us your name and contact we will connect you asap!!!</h3>
+              <form className="flex flex-col mx-4" onSubmit={onSubmitForm}>
                 <input
                   name="name"
                   value={name}
