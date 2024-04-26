@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import heroAs from "../assets/heroAs.svg";
 // import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 // toast.configure();
 export default function Hero() {
@@ -30,12 +31,12 @@ export default function Hero() {
     isAuth();
   }, []);
   console.log(isAuthenticated)
-
+ const navigate=useNavigate()
   const handleContinueClick = () => {
     if (isAuthenticated) {
       // Navigate to dashboard if authenticated
       // You can replace '/dashboard' with the actual route to the dashboard
-      window.location.href = '/dashboard';
+      navigate('/dashboard')
       
     } else {
       // Show toast notification if not authenticated

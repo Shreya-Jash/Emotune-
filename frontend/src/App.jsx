@@ -11,7 +11,7 @@ export default function App() {
         <ToastContainer />
         <Routes>
           <Route exact path="/" Component={Home} />
-          <Route path="/dashboard" Component={Dashboard} />
+          <Route exact path="/dashboard" Component={Dashboard} />
         </Routes>
       </div>
     </Router>
