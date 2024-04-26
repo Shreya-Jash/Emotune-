@@ -19,7 +19,7 @@ const PopUp = ({ closeModal, setAuth }) => {
     e.preventDefault();
     try {
       const body = { name, password };
-      const response = await fetch("http://localhost:5000/auth/login", {
+      const response = await fetch(`${process.env.BACKEND_HOST}/auth/login`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",

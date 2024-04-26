@@ -15,7 +15,7 @@ export default function Hero() {
 
   async function isAuth() {
     try {
-      const response = await fetch("http://localhost:5000/auth/verify", {
+      const response = await fetch(`${process.env.BACKEND_HOST}/auth/login`, {
         method: "GET",
         headers: { token: localStorage.token },
       });
