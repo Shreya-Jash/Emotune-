@@ -59,9 +59,12 @@ router.post("/login", validInfo, async (req, res) => {
     const { name, password } = req.body;
 
     //2. check id user doesn't exist  (if not then we throw error)
+    console.log(pool.config)
+  
     const user = await pool.query("SELECT * FROM users WHERE user_name = $1", [
       name,
     ]);
+    console.log(user)
 
     if (user.rows.length === 0) {
       return res.status(401).json("Password or username is incorrect");
@@ -86,7 +89,7 @@ router.post("/login", validInfo, async (req, res) => {
 
     res.json({ token });
   } catch (err) {
-    console.error(err.message);
+    console.error(err);
     res.status(500).send("Server Error");
   }
 });
